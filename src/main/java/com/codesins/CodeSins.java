@@ -9,8 +9,8 @@ public class CodeSins {
     // Questão 1: formatPropertyTitles
     // ==========================================
     public static String[] formatPropertyTitles(String[] titles) {
-        //Implemente aqui
-        return new String[0];
+        var propTitles = new PropertyTitles(titles);
+        return propTitles.formatPropertyTitles();
     }
 
     // ==========================================
