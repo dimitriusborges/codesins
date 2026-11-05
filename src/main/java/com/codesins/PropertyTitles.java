@@ -23,7 +23,7 @@ public class PropertyTitles {
 
     private String formatPropertyTitle(String titleToFormat){
 
-        var trimmed = titleToFormat.trim();
+        var trimmed = titleToFormat.trim().toLowerCase();
         var titleMembers = trimmed.split(" ");
 
         var titleAdjusted = Arrays.stream(titleMembers).filter(el -> !el.isEmpty()).map(this::adjustCase).toList();
@@ -31,9 +31,7 @@ public class PropertyTitles {
     }
 
     private String adjustCase(String member){
-        var lowered = member.toLowerCase();
-
-        return lowered.substring(0, 1).toUpperCase() + lowered.substring(1);
+        return member.substring(0, 1).toUpperCase() + member.substring(1);
 
 
     }
