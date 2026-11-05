@@ -31,6 +31,11 @@ public class PropertyTitles {
     }
 
     private String adjustCase(String member){
+
+        if(member.length() == 1){
+            return member.substring(0, 1).toUpperCase();
+        }
+
         return member.substring(0, 1).toUpperCase() + member.substring(1);
 
 
