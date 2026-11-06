@@ -24,4 +24,20 @@ class CodeSinsTest {
 
     }
 
+    @Test
+    void testQuestionTwo(){
+
+        int[][] calendar ={
+                {0, 1, 0, 0, 2}, //property 1
+                {0, 0, 0, 0, 0}, //2
+                {1, 0, 0, 0, 0}  //3
+        };
+
+        int[] expectedResult = {2, 3};
+
+        var result = sut.findAvailableDates(calendar);
+
+        assertArrayEquals(result, expectedResult);
+    }
+
 }

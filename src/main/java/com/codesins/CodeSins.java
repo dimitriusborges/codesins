@@ -17,8 +17,9 @@ public class CodeSins {
     // Questão 2: findAvailableDates
     // ==========================================
     public static int[] findAvailableDates(int[][] calendar) {
-        // Implemente aqui
-        return new int[0];
+        var vacancyDates = new VacancyDates(calendar);
+
+        return vacancyDates.findVacantDays();
     }
 
     // ==========================================
