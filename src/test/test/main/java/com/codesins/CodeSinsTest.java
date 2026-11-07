@@ -40,4 +40,17 @@ class CodeSinsTest {
         assertArrayEquals(result, expectedResult);
     }
 
+
+    @Test
+    void testQuestionThree(){
+        int[] prices = {100, 200, 300, 150, 120, 400};
+        int maxBudged = 600;
+
+        var expectedResult = 3;
+
+        var result = sut.maxBookingWindow(prices, maxBudged);
+
+        assertEquals(expectedResult, result);
+    }
+
 }

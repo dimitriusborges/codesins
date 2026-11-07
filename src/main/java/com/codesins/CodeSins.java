@@ -26,8 +26,8 @@ public class CodeSins {
     // Questão 3: maxBookingWindow
     // ==========================================
     public static int maxBookingWindow(int[] prices, int maxBudget) {
-        // Implemente aqui
-        return 0;
+        var bookingWindowCalculator = new BookingWindow(prices);
+        return bookingWindowCalculator.findMaxWindowFromBudget(maxBudget);
     }
 
     // ==========================================
