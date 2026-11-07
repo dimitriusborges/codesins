@@ -25,7 +25,7 @@ public class BookingWindow {
         var windowStart = 0;
 
         //this is the max index not the max size
-        var windowUpperLimit = bookingOptions.size() - 1;
+        var windowUpperLimit = bookingOptions.size();
         var windowBudget = this.bookingOptions.getFirst();
         var currentWindowSize = 0;
 
